@@ -15,11 +15,6 @@ public class Question07_2 {
 		int[] prices = { 100, 200, 300, 400, 500 };
 		int[] buyCounts = new int[5];
 
-		//		for (int i = 0; i < 5; i++) {
-		//			System.out.println(itemNames[i] + "の在庫数:>" + stocks[i]);
-		//
-		//		}
-
 		for (int i = 0; i < 5; i++) {
 
 			System.out.println(itemNames[i] + "の購入数>");
@@ -28,11 +23,7 @@ public class Question07_2 {
 
 			buyCounts[i] = buy;
 		}
-		//			if (buyCounts[i] > stocks[i]) {
-		//				System.out.println("在庫数を超えています。もう一度入力してください。");
-		//				i--;
-		//			} else {
-		//				break;
+
 		int Totalprices = 0;
 		for (int j = 0; j < 5; j++) {
 			System.out.println(itemNames[j] + ":" + (prices[j] * buyCounts[j] + "円"));
