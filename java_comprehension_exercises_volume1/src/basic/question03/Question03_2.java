@@ -8,7 +8,17 @@ public class Question03_2 {
 
 	public static void main(String[] args) {
 
-		// TODO:ここに実装
-		
+		int bacePrice = 1200;
+		int tickets = 3;
+		int reducedPrice = bacePrice - 200;
+		int reducedTickets = --tickets;
+		int totalPrice = reducedPrice * reducedTickets;
+		double taxRate = 1.1;
+		int totalWithTax = (int) (totalPrice * taxRate);
+
+		System.out.println("購入可能枚数は" + reducedTickets + "枚です。");
+		System.out.println("値下げ後の1枚あたりの料金は" + reducedPrice + "円です。");
+		System.out.println("合計金額は(税抜き)は\\" + totalPrice + "です。");
+		System.out.println("合計金額は(税込み)は\\" + totalWithTax + "です。");
 	}
 }
